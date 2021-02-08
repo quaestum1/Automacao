@@ -1,0 +1,15 @@
+**Como Baixar o Inspect.exe**
+Para Baixar o Inspect.exe, sugiro que vá no "Visual Studio Installer", modifique seu arquivo instalado e vá "Componentes individuais" e procure por "SDK do WIndowns 10 (10.0.18362.0)" e instale.
+
+**Como acessar o Inspect.exe**
+1 - Acessar "Disco Local (C:)",
+2 - "Arquivos de Programas (x86)",
+3-  "Windowns Kits",
+4 - "10",
+5 -"bin",
+6 - "10.0.18362.0",
+7 - "x64" (ou algum dos outros, depende do seu computador),
+8 - Procure por "Inspect.exe".
+
+
+By: Quaestum
