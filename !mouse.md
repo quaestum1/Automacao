@@ -25,4 +25,18 @@
   ><br>        }
   
 </details>
+
+<details><summary><b>SendKeys</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >using System.Windows.Forms;
+  
+####  Code  
+  > SendKeys.SendWait("carvalho_leandro1@hotmail.com");
+  
+</details>
+
 </details>
