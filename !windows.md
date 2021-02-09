@@ -12,4 +12,18 @@
   > System.Diagnostics.Process.Start("PathToExe.exe");
   
 </details>
+
+<details><summary><b>Taskkill</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  > using System.Diagnostics;
+  
+####  Code  
+  > Process.Start("taskkill", "/F /IM [taskname].exe");
+  
+</details>
+
 </details>
