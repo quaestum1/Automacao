@@ -6,3 +6,5 @@
 <a href="https://github.com/Japaloc0/Quaestomation/blob/master/!xml.md">Xml</a> <br>
 <a href="https://github.com/Japaloc0/Quaestomation/blob/master/!excel.md">Excel</a> <br>
 <a href="https://github.com/Japaloc0/Quaestomation/blob/master/!windows.md">Windows</a> <br>
+<a href="https://github.com/Japaloc0/Quaestomation/blob/master/!image.md">Imagem</a> <br>
+<a href="https://github.com/Japaloc0/Quaestomation/blob/master/!mouse.md">Mouse</a> <br>
