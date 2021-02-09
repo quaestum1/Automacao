@@ -35,7 +35,7 @@
   >using System.Windows.Forms;
   
 ####  Code  
-  > SendKeys.SendWait("carvalho_leandro1@hotmail.com");
+  > SendKeys.SendWait("");
   
 </details>
 
