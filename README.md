@@ -1,8 +1,8 @@
 # <a href="https://github.com/Hidekithiago/Automacao">Quaestomation</a> <br>
-<a href="https://github.com/Hidekithiago/Automacao/blob/master/!BD.md">Banco de Dados</a> <br>
-<a href="https://github.com/Hidekithiago/Automacao/blob/master/!Regex.md">Regex</a> <br>
-<a href="https://github.com/Hidekithiago/Automacao/blob/master/!Files.md">Files</a> <br>
-<a href="https://github.com/Hidekithiago/Automacao/blob/master/!Folder.md">Folder</a> <br>
+<a href="https://github.com/Hidekithiago/Automacao/blob/master/!bd.md">Banco de Dados</a> <br>
+<a href="https://github.com/Hidekithiago/Automacao/blob/master/!regex.md">Regex</a> <br>
+<a href="https://github.com/Hidekithiago/Automacao/blob/master/!files.md">Files</a> <br>
+<a href="https://github.com/Hidekithiago/Automacao/blob/master/!folder.md">Folder</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!xml.md">Xml</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!excel.md">Excel</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!windows.md">Windows</a> <br>
