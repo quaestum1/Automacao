@@ -7,5 +7,5 @@
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!excel.md">Excel</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!windows.md">Windows</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!image.md">Imagem</a> <br>
-<a href="https://github.com/Hidekithiago/Automacao/blob/master/!mouse.md">Mouse</a> <br>
+<a href="https://github.com/Hidekithiago/Automacao/blob/master/!mouse.md">Mouse/Keyboard</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!email.md">Email</a> <br>
