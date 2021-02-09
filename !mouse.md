@@ -1,4 +1,4 @@
-## <a href="https://github.com/Hidekithiago/Automacao/blob/master/README.md">Mouse</a> <br>
+## <a href="https://github.com/Hidekithiago/Automacao/blob/master/README.md">Mouse/Keyboard</a> <br>
 <details>
 <details><summary><b>Move mouse and Click</b></summary>
   
