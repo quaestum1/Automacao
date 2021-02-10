@@ -45,4 +45,27 @@
   ><br>            Console.WriteLine("The process failed: {0}", e.ToString());
   ><br>        }
 </details>
+<details><summary><b>Change folder a file</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >using System;
+  ><br>using System.IO;
+  
+####  Code
+  >private static void ChangeFolder()
+  ><br>      {
+  ><br>            string sourceFile = @"C:\Users\Public\public\test.txt";
+  ><br>            string destinationFile = @"C:\Users\Public\private\test.txt";
+  ><br>
+  ><br>            // To move a file or folder to a new location:
+  ><br>            System.IO.File.Move(sourceFile, destinationFile);
+  ><br>
+  ><br>            // To move an entire directory. To programmatically modify or combine
+  ><br>            // path strings, use the System.IO.Path class.
+  ><br>            System.IO.Directory.Move(@"C:\Users\Public\public\test\", @"C:\Users\Public\private");
+  ><br>        }
+</details>
 </details>
