@@ -41,4 +41,35 @@
   ><br>        }
   
 </details>
+<details><summary><b>Comparar imagem e executar algo</b></summary>
+  
+####  NuGet
+  > System.Drawing.Common
+  
+####  import
+  > using System.Drawing;
+  ><br>using System.Drawing.Imaging;
+  
+####  Code  
+  > k = 0;
+  ><br>              do{// Mensagem de Pedido nao encontrado
+  ><br>                    imgIgual = false;
+  ><br>                    Thread.Sleep(500);
+  ><br>                    PrintScreen(365, 152, 0, 0, 635, 420);
+  ><br>                    dirPrintModelo = @"C:\quaestum\img\modeloPedidoKPL.jpg";
+  ><br>                    imgIgual = ComparatorImage(dirPrintModelo, dirPrint);
+  ><br>             if (k < 9)
+  ><br>                    {
+  ><br>                        k++;
+  ><br>                        if (imgIgual == true)
+  ><br>                        {
+  ><br>                            MouseClick(742, 441);
+  ><br>                            MouseClick(1355, 31);
+  ><br>                            Console.WriteLine("1355");
+  ><br>                        }
+  ><br>                    }
+  ><br>                    else imgIgual = true;
+  ><br>                } while (imgIgual == false);
+  
+</details>
 </details>
