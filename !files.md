@@ -30,19 +30,21 @@
   ><br>using System.IO;
   
 ####  Code
-  >try
+  >private static void getFilesinFolder(String urlPasta, String tipo)
   ><br>      {
-  ><br>            // Only get files that begin with the letter "c".
-  ><br>            string[] dirs = Directory.GetFiles(@"c:\", "c*");
-  ><br>            Console.WriteLine("The number of files starting with c is {0}.", dirs.Length);
-  ><br>            foreach (string dir in dirs)
-  ><br>            {
-  ><br>                Console.WriteLine(dir);
+  ><br>            try
+  ><br>            {                
+  ><br>                string[] dirs = Directory.GetFiles(urlPasta, tipo);
+  ><br>                Console.WriteLine("The number of files starting with c is {0}.", dirs.Length);
+  ><br>                foreach (string dir in dirs)
+  ><br>                {
+  ><br>                    Console.WriteLine(dir);
+  ><br>                }
   ><br>            }
-  ><br>        }
-  ><br>        catch (Exception e)
-  ><br>        {
-  ><br>            Console.WriteLine("The process failed: {0}", e.ToString());
+  ><br>            catch (Exception e)
+  ><br>            {
+  ><br>                Console.WriteLine("The process failed: {0}", e.ToString());
+  ><br>            }
   ><br>        }
 </details>
 <details><summary><b>Change folder a file</b></summary>
