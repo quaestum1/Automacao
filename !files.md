@@ -70,4 +70,21 @@
   ><br>            System.IO.Directory.Move(@"C:\Users\Public\public\test\", @"C:\Users\Public\private");
   ><br>        }
 </details>
+<details><summary><b>Read file</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >using System;
+  ><br>using System.IO;
+  ><br>using System.Text;
+  
+####  Code
+  >public static void readFile(String filePath)
+  ><br>      {
+  ><br>            string readText = File.ReadAllText(filePath);
+  ><br>            Console.WriteLine(readText);
+  ><br>        }
+</details>
 </details>
