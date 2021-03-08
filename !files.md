@@ -87,4 +87,22 @@
   ><br>            Console.WriteLine(readText);
   ><br>        }
 </details>
+<details><summary><b>GET FILE NAME</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >using System;
+  ><br>using System.IO;
+  
+####  Code
+  >private static void GetFileName()
+  ><br>      String filePath = @"C:\quaestum\a.xlsx";
+  ><br>          FileInfo fileInfo = new FileInfo(filePath);
+  ><br>          System.IO.File.Move(filePath, @"C:\quaestum\robo\" + fileInfo.Name);
+  ><br>          Environment.Exit(0);
+</details>
+
+
 </details>
