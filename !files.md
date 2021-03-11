@@ -83,7 +83,7 @@
 ####  Code
   >public static void readFile(String filePath)
   ><br>      {
-  ><br>            string readText = File.ReadAllText(filePath);
+  ><br>            string readText = File.ReadAllText(filePath, Encoding.Default);
   ><br>            Console.WriteLine(readText);
   ><br>        }
 </details>
