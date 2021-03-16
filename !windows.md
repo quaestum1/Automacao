@@ -24,6 +24,7 @@
   > Process p = new Process(); 
  ><br>p.StartInfo.UseShellExecute = false;
  ><br>p.StartInfo.RedirectStandardOutput = true;
+ ><br>p.StartInfo.Arguments = "/c echo Foo && echo Bar";
  ><br>p.StartInfo.FileName = "YOURBATCHFILE.bat";
  ><br>p.Start(); 
  ><br>string output = p.StandardOutput.ReadToEnd();
