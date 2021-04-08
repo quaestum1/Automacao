@@ -104,6 +104,36 @@
   ><br>          Environment.Exit(0);
   ><br>}
 </details>
+<details><summary><b>Write File</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >using System;
+  ><br>using System.IO;
+  
+####  Code
+  >using (StreamWriter writer = new StreamWriter("C:\\dados\\macoratti.txt", true))
+	><br>{
+  ><br>	    writer.WriteLine("Macoratti .net");
+	><br>}
+</details>
+<details><summary><b>Write File Exists</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >using System;
+  ><br>using System.IO;
+  
+####  Code
+  > using (StreamWriter writer = new StreamWriter(@"C:\dados\macoratti.txt", true))
+	><br>{
+	><br>    writer.WriteLine("Quase tudo para Visual Basic");
+	><br>}
+</details>
 
 
 </details>
