@@ -20,7 +20,6 @@
             conexao.Close(); <br>
   
 </details>
-
 <details><summary><b>MYSQL</b></summary>
   
 ####  NuGet
@@ -39,6 +38,27 @@
                 MessageBox.Show(String.Format("{0};{1};{2};{3}", reader[0], reader[1], reader[2], reader[3])); //Mostra o resultado <br>
             } <br>
             conexao.Close(); //Fecha conexão <br>
+  
+</details>
+<details><summary><b>MYSQL</b></summary>
+  
+####  NuGet
+  >MySQL.Data
+  
+####  import
+  >using MySql.Data.MySqlClient; //Instalar o MySQL.Data
+  
+####  Code
+  >using (var conexao = new MySqlConnection(mysqldb))
+  ><br>          {
+  ><br>                conexao.Open(); //Libera a conexão
+  ><br>                string query = "SELECT * FROM retencao_ecac where cnpj_benef = '" + cnpjBeneficio + "' and cnpj_pagador = '" + cnpjPagador + "' and imposto = " + rendimento;
+  ><br>                Console.WriteLine(query);
+  ><br>                MySqlCommand cmd = new MySqlCommand(query, conexao); //Executa a query na conexão
+  ><br>                MySqlDataReader reader = cmd.ExecuteReader();
+  ><br>                if (reader.HasRows) return 1;
+  ><br>                else return 0;              
+  ><br>            }
   
 </details>
 
