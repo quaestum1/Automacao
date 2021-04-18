@@ -134,6 +134,20 @@
 	><br>    writer.WriteLine("Quase tudo para Visual Basic");
 	><br>}
 </details>
-
+<details><summary><b>Unzip File</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >using System.IO.Compression;
+  
+####  Code
+  > string startPath = @".\start";
+  ><br>      string zipPath = @".\result.zip";
+  ><br>      string extractPath = @".\extract";
+  ><br>     ZipFile.CreateFromDirectory(startPath, zipPath);
+  ><br>     ZipFile.ExtractToDirectory(zipPath, extractPath);
+</details>
 
 </details>
