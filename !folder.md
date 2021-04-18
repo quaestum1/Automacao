@@ -26,4 +26,16 @@
         } <br>
   
 </details>
+<details><summary><b>GET Dir Special Folder</b></summary>
+  
+####  NuGet
+  > 
+  
+####  import
+  >
+  
+####  Code
+  >private static String desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+  
+</details>
 </details>
