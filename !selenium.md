@@ -1,85 +1,63 @@
-## <a href="https://github.com/Hidekithiago/Automacao/blob/master/README.md">Banco de Dados</a> <br>
+## <a href="https://github.com/Hidekithiago/Automacao/blob/master/README.md">Selenium</a> <br>
 <details>
-<details><summary><b>SQL SERVER</b></summary>
+<details><summary><b>Escrever algo</b></summary>
   
 ####  NuGet
-  >using System.Data.SqlClient
-  
+  >Selenium.Support
+  ><br>Selenium.WebDriver
+  ><br>Selenium.WebDriver.ChromeDriver
 ####  import
-  >using System.Data.SqlClient; //Instalar o System.Data.SqlClient
+  >using OpenQA.Selenium;
+  ><br>using OpenQA.Selenium.Chrome;
+  ><br>using OpenQA.Selenium.Support.UI;
      
 ####  Code
-  > SqlConnection conexao = new SqlConnection(connString); <br>
-            conexao.Open(); <br>
-            SqlCommand cmd = new SqlCommand(query, conexao); <br>
-            SqlDataReader reader = cmd.ExecuteReader(); <br>
-            while (reader.Read()) <br>
-            { <br>
-                MessageBox.Show(String.Format("{0};{1};{2};{3}", reader[0], reader[1], reader[2], reader[3])); <br>
-            } <br>
-            conexao.Close(); <br>
+  > driver.FindElement(By.XPath("/html/body/div[2]/div/form/fieldset/p/input")).Clear();
+  ><br> driver.FindElement(By.XPath("/html/body/div[2]/div/form/fieldset/p/input")).SendKeys(crmMedico);
   
 </details>
-<details><summary><b>MYSQL</b></summary>
+<details><summary><b>Clicar no botao</b></summary>
   
 ####  NuGet
-  >MySQL.Data
-  
+  >Selenium.Support
+  ><br>Selenium.WebDriver
+  ><br>Selenium.WebDriver.ChromeDriver
 ####  import
-  >using MySql.Data.MySqlClient; //Instalar o MySQL.Data
-  
+  >using OpenQA.Selenium;
+  ><br>using OpenQA.Selenium.Chrome;
+  ><br>using OpenQA.Selenium.Support.UI;
+     
 ####  Code
-  >MySqlConnection conexao = new MySqlConnection(connString); //Cria conexão com o BD na variável conexao <br>
-            conexao.Open(); //Libera a conexão <br>
-            MySqlCommand cmd = new MySqlCommand(query, conexao); //Executa a query na conexão <br> 
-            MySqlDataReader reader = cmd.ExecuteReader(); //Salva os dados em uma variável <br>
-            while (reader.Read()) //Cria uma recorrencia para os dados encontrados(Semelhante ao "FOR EACH") <br>
-            { <br>
-                MessageBox.Show(String.Format("{0};{1};{2};{3}", reader[0], reader[1], reader[2], reader[3])); //Mostra o resultado <br>
-            } <br>
-            conexao.Close(); //Fecha conexão <br>
+  > driver.FindElement(By.XPath("/html/body/age_nao_gravar/div[2]/div/form/age_substituir_cabec_log/table/tbody/tr[5]/td/table[2]/tbody/tr[1]/td[2]/a[1]/img")).Click();
   
 </details>
-<details><summary><b>MYSQL</b></summary>
+<details><summary><b>Capturar o texto</b></summary>
   
 ####  NuGet
-  >MySQL.Data
-  
+  >Selenium.Support
+  ><br>Selenium.WebDriver
+  ><br>Selenium.WebDriver.ChromeDriver
 ####  import
-  >using MySql.Data.MySqlClient; //Instalar o MySQL.Data
-  
+  >using OpenQA.Selenium;
+  ><br>using OpenQA.Selenium.Chrome;
+  ><br>using OpenQA.Selenium.Support.UI;
+     
 ####  Code
-  >using (var conexao = new MySqlConnection(mysqldb))
-  ><br>          {
-  ><br>                conexao.Open(); //Libera a conexão
-  ><br>                string query = "SELECT * FROM retencao_ecac where cnpj_benef = '" + cnpjBeneficio + "' and cnpj_pagador = '" + cnpjPagador + "' and imposto = " + rendimento;
-  ><br>                Console.WriteLine(query);
-  ><br>                MySqlCommand cmd = new MySqlCommand(query, conexao); //Executa a query na conexão
-  ><br>                MySqlDataReader reader = cmd.ExecuteReader();
-  ><br>                if (reader.HasRows) return 1;
-  ><br>                else return 0;              
-  ><br>            }
-  
+  > string variavel = driver.FindElement(By.XPath("")).Text;  
 </details>
-
-<details><summary><b>ORACLE</b></summary>
+<details><summary><b>Seleciona uma opcao Droplist</b></summary>
   
 ####  NuGet
-  >using Oracle.ManagedDataAccess
-  
+  >Selenium.Support
+  ><br>Selenium.WebDriver
+  ><br>Selenium.WebDriver.ChromeDriver
 ####  import
-  >using Oracle.ManagedDataAccess.Client; //Instalar Oracle.ManagedDataAccess
-  
+  >using OpenQA.Selenium;
+  ><br>using OpenQA.Selenium.Chrome;
+  ><br>using OpenQA.Selenium.Support.UI;
+     
 ####  Code
-  >OracleConnection conexao = new OracleConnection(connString); <br>
-            conexao.Open(); <br>
-            OracleCommand cmd = new OracleCommand(query, conexao); <br>
-            OracleDataReader reader = cmd.ExecuteReader(); <br>
-            while (reader.Read()) <br>
-            { <br>
-                MessageBox.Show(String.Format("{0};{1};{2};{3}", reader[0], reader[1], reader[2], reader[3])); <br>
-            } <br>
-            conexao.Close(); <br>
-  
+  > var selectElement = new SelectElement(driver.FindElement(By.XPath("/html/body/div[2]/div/form[1]/table[1]/tbody/tr[1]/td/table/tbody/tr[4]/td[2]/span[1]/select")));
+  ><br> selectElement.SelectByText("Atestado Médico");
 </details>
 </details>
