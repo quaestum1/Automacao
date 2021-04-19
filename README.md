@@ -10,3 +10,4 @@
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!mouse.md">Mouse/Keyboard</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!email.md">Email</a> <br>
 <a href="https://github.com/Hidekithiago/Automacao/blob/master/!forWhile.md">For/While</a> <br>
+<a href="https://github.com/Hidekithiago/Automacao/blob/master/!forWhile.md">Selenium</a> <br>
