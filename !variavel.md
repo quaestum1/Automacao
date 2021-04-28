@@ -12,7 +12,6 @@
   > cnpjP = cnpjP + cnpjPagador.Substring(0,10);
   
 </details>
-<details>
 <details><summary><b>Limpar variavel(TRIM)</b></summary>
   
 ####  NuGet
