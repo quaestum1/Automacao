@@ -60,4 +60,43 @@
   > var selectElement = new SelectElement(driver.FindElement(By.XPath("/html/body/div[2]/div/form[1]/table[1]/tbody/tr[1]/td/table/tbody/tr[4]/td[2]/span[1]/select")));
   ><br> selectElement.SelectByText("Atestado Médico");
 </details>
+<details><summary><b>Maximixar a tela</b></summary>
+####  NuGet
+  >Selenium.Support
+  ><br>Selenium.WebDriver
+  ><br>Selenium.WebDriver.ChromeDriver
+####  import
+  >using OpenQA.Selenium;
+  ><br>using OpenQA.Selenium.Chrome;
+  ><br>using OpenQA.Selenium.Support.UI;
+     
+####  Code
+  > driver.Manage().Window.Maximize();
+</details>
+<details><summary><b>Mudar a pagina</b></summary>
+####  NuGet
+  >Selenium.Support
+  ><br>Selenium.WebDriver
+  ><br>Selenium.WebDriver.ChromeDriver
+####  import
+  >using OpenQA.Selenium;
+  ><br>using OpenQA.Selenium.Chrome;
+  ><br>using OpenQA.Selenium.Support.UI;
+     
+####  Code
+  > driver.Navigate().GoToUrl(@"https://sistema.soc.com.br/WebSoc/");
+</details>
+<details><summary><b>Buscar um atributo</b></summary>
+####  NuGet
+  >Selenium.Support
+  ><br>Selenium.WebDriver
+  ><br>Selenium.WebDriver.ChromeDriver
+####  import
+  >using OpenQA.Selenium;
+  ><br>using OpenQA.Selenium.Chrome;
+  ><br>using OpenQA.Selenium.Support.UI;
+     
+####  Code
+  > var bt_0 = driver.FindElement(By.Id("bt_0")).GetAttribute("value");
+</details>
 </details>
